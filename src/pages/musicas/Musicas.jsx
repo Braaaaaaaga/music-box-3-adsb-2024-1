@@ -18,6 +18,7 @@ const Musicas = () => {
             console.log("Deu erro, tente novamente!") // Caso haja um erro na requisição, exibe uma mensagem no console
         })
     }
+    
 
     /*
     EXEMPLO DE POST 
@@ -85,9 +86,7 @@ const Musicas = () => {
     return (
         // Fragmento React para agrupar os elementos retornados
         <>
-            {/* Renderiza o componente NavBar, passando o logo como propriedade */}
             <NavBar logoInicio={logo} />
-            {/* Contêiner para os cartões de música */}
             <div className={styles["content-musicas"]}>
                 {cardsData && cardsData.map((data, index) => (
                     <div key={index} className={styles["quadrado"]}>
